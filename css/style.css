@@ -1,0 +1,33 @@
+body {
+  background-color: #f5f6f8;
+}
+
+.table > :not(caption) > * > * {
+  vertical-align: middle;
+}
+
+.thumb {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 0.375rem;
+  border: 1px solid #dee2e6;
+}
+
+.card-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.detail-image {
+  width: 100%;
+  max-height: 380px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid #dee2e6;
+}
+
+.qty-input {
+  width: 90px;
+}

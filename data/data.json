@@ -1,0 +1,237 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Store Admin",
+      "email": "admin@shop.com",
+      "password": "Admin@123",
+      "role": "admin",
+      "cart": [],
+      "wishlist": []
+    },
+    {
+      "id": 2,
+      "name": "Demo Customer",
+      "email": "customer@shop.com",
+      "password": "Customer@123",
+      "role": "customer",
+      "cart": [],
+      "wishlist": []
+    },
+    {
+      "id": 3,
+      "name": "Sara Ahmed",
+      "email": "sara@shop.com",
+      "password": "Sara@1234",
+      "role": "customer",
+      "cart": [],
+      "wishlist": []
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "description": "Phones, laptops and accessories"
+    },
+    {
+      "id": 2,
+      "name": "Clothing",
+      "description": "Men and women apparel"
+    },
+    {
+      "id": 3,
+      "name": "Books",
+      "description": "Fiction, non-fiction and study material"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Wireless Headphones",
+      "categoryId": 1,
+      "price": 59.99,
+      "stock": 25,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%230d6efd%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EHeadphones%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "description": "Over-ear Bluetooth headphones with 30 hours of battery life."
+    },
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "categoryId": 1,
+      "price": 129.5,
+      "stock": 3,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%236610f2%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EWatch%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "description": "Fitness tracking, heart-rate monitor and notifications on your wrist."
+    },
+    {
+      "id": 3,
+      "name": "Cotton T-Shirt",
+      "categoryId": 2,
+      "price": 15,
+      "stock": 80,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23198754%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3ET-Shirt%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "description": "Soft 100% cotton t-shirt available in a classic regular fit."
+    },
+    {
+      "id": 4,
+      "name": "Denim Jacket",
+      "categoryId": 2,
+      "price": 49.9,
+      "stock": 12,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%2320c997%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EJacket%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "description": "Durable denim jacket with a comfortable lining for cooler days."
+    },
+    {
+      "id": 5,
+      "name": "JavaScript Handbook",
+      "categoryId": 3,
+      "price": 24.75,
+      "stock": 40,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23fd7e14%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EJS%20Book%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "description": "A practical guide to modern JavaScript with worked examples."
+    },
+    {
+      "id": 6,
+      "name": "Clean Code",
+      "categoryId": 3,
+      "price": 32,
+      "stock": 0,
+      "image": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23dc3545%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-family%3D%22Arial%22%20font-size%3D%2228%22%20fill%3D%22%23fff%22%20text-anchor%3D%22middle%22%20dominant-baseline%3D%22middle%22%3EClean%20Code%3C%2Ftext%3E%3C%2Fsvg%3E",
+      "description": "A handbook of agile software craftsmanship for professional developers."
+    }
+  ],
+  "orders": [
+    {
+      "id": 1001,
+      "customerId": 2,
+      "customerName": "Demo Customer",
+      "customerEmail": "customer@shop.com",
+      "status": "pending",
+      "total": 89.99,
+      "createdAt": "2026-10-10T09:00:00.000Z",
+      "shipping": {
+        "fullName": "Demo Customer",
+        "phone": "01012345678",
+        "address": "12 Nile Street",
+        "city": "Cairo"
+      },
+      "payment": {
+        "method": "cod",
+        "status": "unpaid"
+      },
+      "items": [
+        {
+          "productId": 1,
+          "name": "Wireless Headphones",
+          "price": 59.99,
+          "qty": 1
+        },
+        {
+          "productId": 3,
+          "name": "Cotton T-Shirt",
+          "price": 15,
+          "qty": 2
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "customerId": 2,
+      "customerName": "Demo Customer",
+      "customerEmail": "customer@shop.com",
+      "status": "pending",
+      "total": 647.5,
+      "createdAt": "2026-10-09T15:30:00.000Z",
+      "shipping": {
+        "fullName": "Demo Customer",
+        "phone": "01012345678",
+        "address": "12 Nile Street",
+        "city": "Cairo"
+      },
+      "payment": {
+        "method": "paypal",
+        "status": "paid",
+        "paypalOrderId": "SANDBOX-DEMO-1002"
+      },
+      "items": [
+        {
+          "productId": 2,
+          "name": "Smart Watch",
+          "price": 129.5,
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "customerId": 2,
+      "customerName": "Demo Customer",
+      "customerEmail": "customer@shop.com",
+      "status": "confirmed",
+      "total": 24.75,
+      "createdAt": "2026-10-06T10:00:00.000Z",
+      "resolvedAt": "2026-10-07T08:00:00.000Z",
+      "shipping": {
+        "fullName": "Demo Customer",
+        "phone": "01012345678",
+        "address": "12 Nile Street",
+        "city": "Cairo"
+      },
+      "payment": {
+        "method": "cod",
+        "status": "unpaid"
+      },
+      "items": [
+        {
+          "productId": 5,
+          "name": "JavaScript Handbook",
+          "price": 24.75,
+          "qty": 1
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "customerId": 3,
+      "customerName": "Sara Ahmed",
+      "customerEmail": "sara@shop.com",
+      "status": "confirmed",
+      "total": 49.9,
+      "createdAt": "2026-10-03T12:00:00.000Z",
+      "resolvedAt": "2026-10-04T09:00:00.000Z",
+      "shipping": {
+        "fullName": "Sara Ahmed",
+        "phone": "01012345678",
+        "address": "12 Nile Street",
+        "city": "Cairo"
+      },
+      "payment": {
+        "method": "cod",
+        "status": "unpaid"
+      },
+      "returnStatus": "requested",
+      "returnReason": "Damaged or defective: The zipper is broken.",
+      "returnRequestedAt": "2026-10-08T11:00:00.000Z",
+      "items": [
+        {
+          "productId": 4,
+          "name": "Denim Jacket",
+          "price": 49.9,
+          "qty": 1
+        }
+      ]
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "productId": 5,
+      "userId": 3,
+      "userName": "Sara Ahmed",
+      "rating": 5,
+      "comment": "Clear examples, very helpful for learning.",
+      "createdAt": "2026-10-05T18:00:00.000Z"
+    }
+  ]
+}

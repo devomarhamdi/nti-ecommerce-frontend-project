@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products - Admin</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar" class="navbar navbar-expand flex-wrap navbar-dark bg-dark px-3"></nav>
+
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3>Products</h3>
+      <button class="btn btn-primary" id="addBtn">+ Add product</button>
+    </div>
+
+    <!-- search and filter -->
+    <div class="row g-2 mb-3">
+      <div class="col-md-6">
+        <input type="text" id="search" class="form-control" placeholder="Search by name or ID">
+      </div>
+      <div class="col-md-6">
+        <select id="categoryFilter" class="form-select"></select>
+      </div>
+    </div>
+
+    <div class="card shadow-sm">
+      <div class="table-responsive">
+        <table class="table table-hover mb-0">
+          <thead class="table-light">
+            <tr><th>Image</th><th>ID</th><th>Name</th><th>Category</th><th class="text-end">Price</th><th class="text-center">Stock</th><th class="text-end">Actions</th></tr>
+          </thead>
+          <tbody id="table"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add / Edit form -->
+  <div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitle">Add product</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col-md-8">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" id="name" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <label for="category" class="form-label">Category</label>
+              <select id="category" class="form-select"></select>
+            </div>
+            <div class="col-6">
+              <label for="price" class="form-label">Price ($)</label>
+              <input type="number" id="price" class="form-control">
+            </div>
+            <div class="col-6">
+              <label for="stock" class="form-label">Stock quantity</label>
+              <input type="number" id="stock" class="form-control">
+            </div>
+            <div class="col-12">
+              <label for="description" class="form-label">Description</label>
+              <textarea id="description" class="form-control" rows="3"></textarea>
+            </div>
+
+            <!-- image: upload a file OR paste a link -->
+            <div class="col-md-7">
+              <label for="imageFile" class="form-label">Image</label>
+              <div class="mb-2">
+                <input type="file" id="imageFile" class="form-control" accept="image/*">
+              </div>
+              <div>
+                <input type="text" id="imageUrl" class="form-control" placeholder="or paste an image link (https://...)">
+              </div>
+            </div>
+            <div class="col-md-5 text-center">
+              <img id="preview" class="img-fluid rounded border d-none" style="max-height: 150px;" alt="preview">
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary" id="saveBtn">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="js/data.js"></script>
+  <script src="js/admin-products.js"></script>
+</body>
+</html>
